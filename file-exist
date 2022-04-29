@@ -1,0 +1,7 @@
+# Check if file exist
+if [ ! -f $file ]
+then
+        echo 'File does not exist'
+        exit
+fi
+
