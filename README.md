@@ -14,3 +14,4 @@ Run it with a cronjob regularly.
 	and fill the lines for an proper email config with smtp auth.
 
 
+Ready!
