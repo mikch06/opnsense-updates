@@ -14,7 +14,7 @@ echo $from $to $smtp $auth $msg
 # Check Opnsense for updates
 updates=$(/usr/local/opnsense/scripts/firmware/check.sh)
 
-if [[ $updates != *$isupdate* ]]; then
+if [[ $updates == *$isupdate* ]]; then
   echo "Packages are up to date."
 else
         echo 'Updates available'
