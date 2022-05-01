@@ -16,7 +16,7 @@ Run it with a cronjob regularly.
 ## Install
 
 	Copy config-smpale.cfg to config.cfg
-	and fill the lines for an proper email config with smtp auth.
+	and fill the lines for a proper email config with smtp auth.
 
 
 Ready!
