@@ -1,1 +1,0 @@
-curl -v --ssl-reqd smtp://mail.cyon.ch --mail-from "admin@fw1.kissel.ch" --mail-rcpt mail@kissel.ch -u smtp@kissel.ch:<password> --upload-file email.txt

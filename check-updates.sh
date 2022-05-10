@@ -8,7 +8,7 @@ set -x
 cd "$(dirname "$0")"
 
 # read config file config.cfg
-. config.cfg
+. conf/config.cfg
 echo $from $to $smtp $auth $msg
 
 # Check Opnsense for updates
