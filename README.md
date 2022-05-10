@@ -17,10 +17,6 @@ Run it with a cronjob regularly.
 
 	Copy config-smpale.cfg to config.cfg
 	and fill the lines for a proper email config with smtp auth.
-	
-	chmod +x check-updates.sh
-	
-	pkg install bash
 
 
 Ready!
