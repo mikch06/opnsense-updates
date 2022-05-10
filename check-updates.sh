@@ -17,15 +17,9 @@ check="$(grep "$isupdate" /tmp/pkg_update.out)"
 
 
 if [ "$check" == "$isupdate" ]; then
-    echo "foooooo"
+    echo "--- Packages are up to date."
 else
-   echo "NO check"
-fi
-
-if [[ $updates != $isupdate ]]; then
-  echo "Packages are up to date."
-else
-        echo 'Updates available'
+        echo '--- Package updates are available'
 
         # Create email message:
         touch $msg
