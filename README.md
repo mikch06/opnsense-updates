@@ -22,7 +22,7 @@ Run it with a opnsense system cronjob regularly.
 
 	Create a opnsense system cronjob
 	
-	![image](https://user-images.githubusercontent.com/7150125/167785260-07b18d2a-b499-4aec-a14a-40b20043f47f.png)
+![image](https://user-images.githubusercontent.com/7150125/167785260-07b18d2a-b499-4aec-a14a-40b20043f47f.png)
 
 
 Ready!
