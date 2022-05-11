@@ -12,9 +12,10 @@ cd "$(dirname "$0")"
 echo $from $to $smtp $auth $msg
 
 # Check Opnsense for updates
-/usr/local/opnsense/scripts/firmware/check.sh
-check="$(grep "$isupdate" /tmp/pkg_update.out)"
+updates=$(/usr/local/opnsense/scripts/firmware/check.sh)
 
+# Check output file for update string
+check="$(grep "$isupdate" /tmp/pkg_update.out)"
 
 if [ "$check" == "$isupdate" ]; then
     echo "--- Packages are up to date."
