@@ -31,7 +31,7 @@ else
         echo "There are new updates ready to install for your Opnsense firewall." >> $msg
 	echo "" >> $msg
 	# Copy script output to message
-	echo $updates >> $msg
+	echo "$updates" >> $msg
 	# Send email message
         curl --ssl-reqd $smtp --mail-from $from --mail-rcpt $to --upload-file $msg -u $auth
 
