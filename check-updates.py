@@ -13,7 +13,7 @@ check = subprocess.Popen(['grep', isupdate, '/tmp/pkg_update.out'])
 
 if check == c.isupdate:
     print("Packages are up to date")
-    exit
+    exit()
 
 else:
     print("New packages are available") 
