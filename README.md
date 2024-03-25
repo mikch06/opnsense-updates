@@ -1,26 +1,27 @@
 # opnsense-updates
 Check opnsense firewall for updates
 
-Script `check-updates.sh` checks if there are any updates for your opnsense Firewall.
+**Update 2024, march:**
+
+I rewrote the code in python. I got errors while using mail by curl - because there is no other mail package. And now, I work with smtplib from python.
+
+For users it's almost the same. Use a new config file with the same parameters.
+
+Script `check-updates.py` checks if there are any updates for your opnsense Firewall.
 
 If there are open updates, the script will send an email message.
 
 Run it with a opnsense system cronjob regularly.
 
 ## Install
-1.
+1. Copy `config-sample.py` to `config.py`
+and fill the lines for a proper email config with smtp auth.
 
-	Copy config-smpale.cfg to config.cfg
-	and fill the lines for a proper email config with smtp auth.
-2.
-
-	Copy and/or edit cron/actions_checkupdate.conf to /usr/local/opnsense/service/conf/actions.d
+2. Copy and/or edit `cron/actions_checkupdate.conf` to `/usr/local/opnsense/service/conf/actions.d`
 	
 	Run service configd restart
 	
-3.
-
-	Create a opnsense system cronjob
+3. Create a opnsense system cronjob
 	
 ![image](https://user-images.githubusercontent.com/7150125/167785260-07b18d2a-b499-4aec-a14a-40b20043f47f.png)
 
