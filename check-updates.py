@@ -9,7 +9,7 @@ updates = updates.stdout
 
 isupdate = "Your packages are up to date."
 
-check = subprocess.Popen(['grep', isupdate, '/tmp/pkg_update.out'], shell=True)
+check = subprocess.Popen(['grep', isupdate, '/tmp/pkg_update.out'])
 
 if check == c.isupdate:
     print("Packages are up to date")
