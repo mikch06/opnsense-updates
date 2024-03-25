@@ -7,7 +7,9 @@ import subprocess
 updates = subprocess.run("/usr/local/opnsense/scripts/firmware/check.sh", shell=True, capture_output=True, text=True)
 updates = updates.stdout
 
-check = subprocess.Popen(['grep', c.isupdate, '/tmp/pkg_update.out'], shell=True)
+isupdate = "Your packages are up to date."
+
+check = subprocess.Popen(['grep', isupdate, '/tmp/pkg_update.out'], shell=True)
 
 if check == c.isupdate:
     print("Packages are up to date")
