@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
