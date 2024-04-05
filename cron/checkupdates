@@ -1,4 +1,2 @@
 
 00 19 * * *  root /root/opnsense-updates/check-updates.py >/dev/null 2>&1
-00 21 * * *  root /root/opnsense-updates/foo.py > /dev/null 2>$1
-
